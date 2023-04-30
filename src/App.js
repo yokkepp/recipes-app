@@ -15,16 +15,7 @@ function App() {
 		);
 		const data = await response.json();
 		console.log("data:", data);
-		// setRecipes(data.hits);
-		setRecipes([
-			{
-				key: "key",
-				title: "title",
-				calories: "calories",
-				image: "image",
-				ingredients: "ingredients",
-			},
-		]);
+		setRecipes(data.hits);
 		console.log(data.hits);
 	};
 
